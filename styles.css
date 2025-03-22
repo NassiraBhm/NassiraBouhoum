@@ -1,0 +1,160 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000435;
+    color: #000435;
+}
+
+/* Sidebar Navigation */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    background: #6A9BD1;
+    color: #000435;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    box-shadow: 4px 0 10px #003366
+}
+
+.sidebar h2 {
+    color: #000435;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color:#000435;
+    padding: 10px 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    font-size: 1.2rem;
+}
+
+.sidebar a:hover {
+    background:  white;;
+}
+
+.main-content {
+    margin-left: 270px; /* Adjusted to prevent overlap */
+    padding: 20px;
+    flex-grow: 1;
+}
+/* Header */
+header {
+    background: #6A9BD1;
+    color: #000435;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.5rem;
+    box-shadow: 4px 0 10px #003366
+}
+
+/* Sections */
+section {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 40px;
+    background: #e0e0e0;
+    box-shadow: 0 5px 15px #6A9BD1;
+    border-radius: 10px;
+}
+
+h3 {
+    color:  #000435;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+/* Tools */
+.tool-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tool {
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    box-shadow: 0 0 10px #6A9BD1
+}
+
+.tool img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 8px;
+}
+
+.tool:hover {
+    transform: scale(1.1);
+}
+
+/* Projects */
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background: #e0e0e0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #6A9BD1;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Buttons */
+.github-link, .resume-button {
+    display: block;
+    width: 200px;
+    text-align: center;
+    margin: 30px auto;
+    padding: 12px;
+    font-size: 1rem;
+    background:  #6A9BD1;
+    color: #000435 ;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.github-link:hover, .resume-button:hover {
+    background: white
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+}
+
+#contact a {
+    color: #6A9BD1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
