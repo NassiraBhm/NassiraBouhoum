@@ -9,16 +9,24 @@
     
 </head>
 <body>
-
-      <!-- Sidebar Navigation -->
-      <div class="sidebar">
-        <a href="#bio">Bio</a>
-        <a href="#tools">Tools</a>
-        <a href="#projects">Projects</a>
-        <a href="#resume">Resume</a>
-        <a href="#contact">Get in Touch</a>
+ <!-- Hamburger Menu for Mobile -->
+    <div class="mobile-nav">
+        <h2>Nassira</h2>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </div>
-
+    
+    <!-- Sidebar Navigation -->
+    <div class="sidebar" id="sidebar">
+        <a href="#bio" onclick="closeMenu()">Bio</a>
+        <a href="#tools" onclick="closeMenu()">Tools</a>
+        <a href="#projects" onclick="closeMenu()">Projects</a>
+        <a href="#resume" onclick="closeMenu()">Resume</a>
+        <a href="#contact" onclick="closeMenu()">Get in Touch</a>
+    </div>
     
 <!-- Main Content -->
 <div class="main-content">
