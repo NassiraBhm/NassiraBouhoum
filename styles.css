@@ -158,3 +158,32 @@ h3 {
 #contact a:hover {
     text-decoration: underline;
 }
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .sidebar a {
+        display: inline-block;
+        padding: 10px;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .tool-container, .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tool img, .project img {
+        max-width: 80px;
+    }
+}
