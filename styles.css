@@ -206,4 +206,13 @@ h3 {
     .main-content {
         margin-left: 0;
     }
+    .tool-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .tool {
+        width: 100px;
+        height: 100px;
+    }
 }
