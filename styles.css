@@ -86,11 +86,18 @@ h3 {
 }
 
 .tool {
+    width: 120px; /* Ensures all tool boxes are the same size */
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 15px;
-    border-radius: 8px;
-    transition: transform 0.3s;
-    box-shadow: 0 0 10px #6A9BD1
+    background: #6A9BD1;
+    color: #000435;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #6A9BD1;
+    padding: 10px;
 }
 
 .tool img {
