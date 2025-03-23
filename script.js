@@ -1,4 +1,3 @@
-<script>
 document.addEventListener("DOMContentLoaded", function () {
     const sidebar = document.querySelector(".sidebar");
     const hamburger = document.querySelector(".hamburger");
@@ -16,4 +15,4 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
-</script>
+
