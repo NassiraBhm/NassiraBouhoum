@@ -21,6 +21,7 @@ body {
     align-items: center;
     padding-top: 20px;
     box-shadow: 4px 0 10px #003366
+    transition: transform 0.3s ease-in-out
 }
 
 .sidebar h2 {
@@ -159,15 +160,35 @@ h3 {
     text-decoration: underline;
 }
 /* Responsive Design */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .sidebar {
         width: 100%;
         height: auto;
         position: relative;
-        text-align: center;
-        padding: 10px 0;
+        transform: translateY(-100%);
     }
 
+    .sidebar.active {
+        transform: translateY(0);
+    }
+
+    .hamburger {
+        display: block;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 1000;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .hamburger div {
+        width: 30px;
+        height: 4px;
+        background: #ffffff;
+        margin: 6px 0;
+    }
     .sidebar a {
         display: inline-block;
         padding: 10px;
