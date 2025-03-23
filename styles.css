@@ -10,7 +10,7 @@ body {
 /* Sidebar Navigation */
 .sidebar {
     position: fixed;
-    left: -250px;
+    left: 0;
     top: 0;
     width: 250px;
     height: 100vh;
