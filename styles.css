@@ -5,6 +5,7 @@ body {
     padding: 0;
     background-color: #000435;
     color: #000435;
+    display: flex;
 }
 
 /* Sidebar Navigation */
