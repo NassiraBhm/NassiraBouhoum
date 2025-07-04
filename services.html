@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Nassira Bouhoum</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer>
+        function toggleMenu() {
+            document.querySelector('.mobile-menu').classList.toggle('show');
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Nassira Bouhoum</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="projects.html">Projects</a>
+            <a href="products.html">Products</a>
+            <a href="services.html">Services</a>
+            <a href="blog.html">Blog</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+    <div class="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="projects.html">Projects</a>
+        <a href="products.html">Products</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html">Blog</a>
+    </div>
+
+    <!-- Services Section -->
+    <section>
+        <h3>Services I Offer</h3>
+        <div class="card-grid">
+            <div class="card">
+                <h4> Data Cleaning & Organization</h4>
+                <p>Turn messy spreadsheets into clean, structured, and reliable datasets. <br>
+Fix errors, standardize formats, handle missing values, and prepare data for analysis, reporting, or integration.</li>
+                </p>
+
+            </div>
+            <div class="card">
+                <h4>KPI Dashboard Creation</h4>
+                <p>I help you rack what matters most with custom dashboards tailored to your business.
+                    Get your personalized Tableau, Power BI, or Excel dashboards to track your KPIs, monitor sales, and improve decision-making.
+                </p>
+            </div>
+            <div class="card">
+                <h4>Product Performance Analysis</h4>
+                <p>Understand what’s driving sales and where to focus your efforts. I help you identify best-selling and underperforming products, analyze sales trends, and recommend data-backed actions to boost profitability.</p>
+            </div>
+            <div class="card">
+                <h4>Customer Segmentation</h4>
+                <p>Understand your customers with RFM segmentation, behavioral clustering, and retention analysis. Discover insights to improve targeting, personalization, and retention.</p>
+            </div>
+            <div class="card">
+                <h4>Database Creation & Data Structuring</h4>
+                <p>Organize your business data into structured, manageable systems. Design databases to store your data, and consolidate and clean files from different sources.</p>
+            </div>
+            <div class="card">
+                <h4>Automated Reporting & Workflow Optimization</h4>
+                <p>Save time and reduce errors with automation. Build reports that update automatically with new data, set up recurring email summaries or data refreshes, and integrate apps and systems using Zapier or scripts.</p>
+            </div>
+            <div class="card">
+                <h4>Predictive Analytics & Forecasting</h4>
+                <p>Move beyond “what happened” — start predicting what’s next. Forecast future sales or revenue, anticipate customer churn or product demand, and use machine learning techniques tailored to your dataset.</p>
+            </div>
+            <div class="card">
+                <h4> Need Something Tailored? Let’s Build a Custom Package</h4>
+                <p>Your business is unique — and so are your data needs. If none of the standard services fit exactly what you're looking for, I offer custom packages built around your specific goals, tools, and challenges.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section>
+        <h3>Work With Me</h3>
+        <p style="text-align: center; max-width: 700px; margin: auto;">
+            Interested in one of the services above? Fill out the form below or email me directly at 
+            <a href="mailto:nassirabouhoum@gmail.com">nassirabouhoum@gmail.com</a>.
+        </p>
+       <form action="https://formsubmit.co/nassirabouhoum@gmail.com" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+
+  <!-- Optional Settings (see below) -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+
+  <button type="submit">Send Message</button>
+</form>
+
+    </section>
+
+    <footer>
+        &copy; 2025 Nassira Bouhoum. All rights reserved.
+    </footer>
+
+</body>
+</html>

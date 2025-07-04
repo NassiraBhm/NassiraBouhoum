@@ -1,218 +1,219 @@
-/* Global Styles */
-body {
-    font-family: 'Poppins', sans-serif;
+/* Reset + Font */
+* {
     margin: 0;
     padding: 0;
-    background-color: #000435;
-    color: #000435;
+    box-sizing: border-box;
 }
 
-/* Sidebar Navigation */
-.sidebar {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 250px;
-    height: 100vh;
-    background: #6A9BD1;
-    color: #000435;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-    box-shadow: 4px 0 10px #003366;
-    transition: left 0.3s ease-in-out;
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fc;
+    color: #1c1c1c;
+    line-height: 1.6;
 }
 
-.sidebar h2 {
-    color: #000435;
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}
-
-.sidebar a {
+a {
     text-decoration: none;
-    color:#000435;
+    color: #6A9BD1;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6A9BD1;
     padding: 10px 20px;
-    display: block;
-    width: 100%;
-    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar .logo {
+    font-weight: bold;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links a {
+    color: white;
+    font-weight: 500;
     transition: 0.3s;
-    font-size: 1.2rem;
 }
 
-.sidebar a:hover {
-    background:  white;;
+.navbar .nav-links a:hover {
+    color: #f0e6f6;
 }
 
-.main-content {
-    margin-left: 270px; /* Adjusted to prevent overlap */
-    padding: 20px;
-    flex-grow: 1;
+/* Hamburger (Mobile) */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
 }
-/* Header */
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+/* Mobile nav menu */
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #6A9BD1;
+}
+
+.mobile-menu a {
+    color: white;
+    padding: 10px 20px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+/* Header Section */
 header {
-    background: #6A9BD1;
-    color: #000435;
     text-align: center;
-    padding: 20px 0;
-    font-size: 1.5rem;
-    box-shadow: 4px 0 10px #003366
+    padding: 60px 20px;
+    background-color: #d9e7f9;
 }
 
-/* Sections */
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 1.2rem;
+    color: #6A9BD1;
+}
+
+/* Section Wrapper */
 section {
+    padding: 60px 20px;
     max-width: 1000px;
-    margin: 50px auto;
-    padding: 40px;
-    background: #e0e0e0;
-    box-shadow: 0 5px 15px #6A9BD1;
-    border-radius: 10px;
+    margin: auto;
 }
 
+/* Section Titles */
 h3 {
-    color:  #000435;
+    font-size: 2rem;
     text-align: center;
-    margin-bottom: 20px;
-    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: #6A9BD1;
 }
 
 /* Tools */
 .tool-container {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
 }
 
 .tool {
-    width: 120px; /* Ensures all tool boxes are the same size */
-    height: 120px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     text-align: center;
-    background: #e0e0e0;
-    color: #000435;
+    background-color: white;
+    padding: 15px;
     border-radius: 10px;
-    box-shadow: 0 0 10px #6A9BD1;
-    padding: 10px;
+    box-shadow: 0 0 10px #d2d2d2;
+    transition: transform 0.3s;
 }
 
 .tool img {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 8px;
+    width: 50px;
+    margin-bottom: 10px;
 }
 
 .tool:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
-/* Projects */
-.project-container {
+/* Projects / Products / Blog */
+.card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    gap: 30px;
 }
 
-.project {
-    background: #e0e0e0;
-    padding: 15px;
+.card {
+    background-color: white;
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px #6A9BD1;
+    box-shadow: 0 0 10px #ccc;
+    transition: transform 0.3s;
 }
 
-.project:hover {
+.card:hover {
     transform: translateY(-5px);
 }
 
-.project img {
-    width: 100%;
+.card img {
     border-radius: 8px;
+    margin-bottom: 10px;
 }
 
-/* Buttons */
-.github-link, .resume-button {
-    display: block;
-    width: 200px;
-    text-align: center;
-    margin: 30px auto;
-    padding: 12px;
-    font-size: 1rem;
-    background:  #6A9BD1;
-    color: #000435 ;
-    text-decoration: none;
+.card h4 {
+    color: #6A9BD1;
+    margin-bottom: 10px;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
     border-radius: 5px;
+    font-family: inherit;
+}
+
+button {
+    background-color: #6A9BD1;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
     transition: 0.3s;
 }
 
-.github-link:hover, .resume-button:hover {
-    background: white
+button:hover {
+    background-color: #557fb6;
 }
 
-/* Contact Section */
-#contact {
+/* Footer */
+footer {
     text-align: center;
+    padding: 20px;
+    color: #999;
 }
 
-#contact a {
-    color: #6A9BD1;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-#contact a:hover {
-    text-decoration: underline;
-}
-
-/* Responsive Navigation */
-@media screen and (max-width: 768px) {
-    .sidebar {
-        position: fixed;
-        left: -250px;
-        transition: left 0.3s ease-in-out;
-        width: 250px;
-        height: 100vh;
-        background: #6A9BD1;
-        box-shadow: 4px 0 10px #003366;
-        padding-top: 20px;
-    }
-
-    .sidebar.active {
-        left: 0;
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        display: none;
     }
 
     .hamburger {
-        position: fixed;
-        top: 20px;
-        left: 20px;
-        background: none;
-        border: none;
-        cursor: pointer;
-        z-index: 1000;
+        display: flex;
     }
 
-    .hamburger span {
-        display: block;
-        width: 30px;
-        height: 4px;
-        margin: 6px 0;
-        background: white;
-        transition: 0.3s;
-    }
-
-    .main-content {
-        margin-left: 0;
-    }
-    .tool-container {
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .tool {
-        width: 100px;
-        height: 100px;
+    .mobile-menu.show {
+        display: flex;
     }
 }

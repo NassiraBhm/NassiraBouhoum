@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Nassira Bouhoum</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer>
+        function toggleMenu() {
+            document.querySelector('.mobile-menu').classList.toggle('show');
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Nassira Bouhoum</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="projects.html">Projects</a>
+            <a href="products.html">Products</a>
+            <a href="services.html">Services</a>
+            <a href="blog.html">Blog</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+    <div class="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="projects.html">Projects</a>
+        <a href="products.html">Products</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html">Blog</a>
+    </div>
+
+    <!-- Products Section -->
+    <section>
+        <h3>Analytics Templates & Digital Products</h3>
+        <div class="card-grid">
+
+            <div class="card">
+                <img src="images/product1img.png" alt="Dashboard Template 1">
+                <h4>Sales Analysis Temmplate (Excel)</h4>
+                <p>A ready-to-use Excel template provides a clean and interactive Sales Analysis Dashboard designed for e-commerce businesses.</p>
+                <a href="https://nassirabouhoum.gumroad.com/l/sales-analysis-template" target="_blank">
+                    <button>Check It Out</button>
+                </a>
+            </div>
+
+            
+
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Nassira Bouhoum. All rights reserved.
+    </footer>
+
+</body>
+</html>
